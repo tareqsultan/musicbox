@@ -4,7 +4,20 @@ An advanced DIY hardware and software interactive audio instrument and groovebox
 It features real-time raw audio sample looping, live time-stretching, dynamic step sequencing, and hardware filtering.
 
 ### ✨ Key Features
+## 🕹️ Operational Modes (System Menu)
 
+The Music Box features 5 distinct real-time operational modes, selectable via the central OLED menu and indicated by the lateral hardware LEDs:
+
+1. **Melodic Mode (MIDI):** Utilizes the VS1053B synthesis engine to play polyphonic instrument tracks, converting step-sequencer data into live MIDI notes with selectable instruments from the General MIDI bank.
+
+2. **Rhythm Loop Mode:** Streams pre-loaded percussion tracks and authentic Gulf folk rhythm loops directly from the SD card, keeping the tempo strictly locked with the visual LED matrix cursor.
+
+3. **Bouncing Ball Mode:** A physics-based generative audio engine. Visual "balls" bounce across the LED matrix, triggering distinct musical notes or samples upon colliding with boundaries or specific steps.
+
+4. **Teensy Samples Mode (RYTM Sampler):** A responsive, low-latency sampler mode utilizing internal Teensy architecture to trigger, slice, and manipulate individual acoustic drum hits and custom audio shots on the fly.
+
+5. **Looper Mode:** The advanced audio performance mode utilizing the `TeensyVariablePlayback` engine. It reads headerless `.RAW` files.
+   
 * **Hardware State Variable Filter:** Real-time low-pass filter with dynamic Cutoff frequency mapping.
 * **Hardware Interface Control:**
   * **Knob 1 (A0):** Controls the loop window and loop length slicing (`looperWindowMs`).
