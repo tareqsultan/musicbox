@@ -4,8 +4,7 @@ An advanced DIY hardware and software interactive audio instrument and groovebox
 It features real-time raw audio sample looping, live time-stretching, dynamic step sequencing, and hardware filtering.
 
 ### ✨ Key Features
-* **Looper Mode:** Seamless real-time playback and retriggering of raw custom audio loops (`.RAW` 16-bit mono format).
-* **Live Time Stretching:** On-the-fly dynamic control over playback speed and pitch using the `TeensyVariablePlayback` engine.
+
 * **Hardware State Variable Filter:** Real-time low-pass filter with dynamic Cutoff frequency mapping.
 * **Hardware Interface Control:**
   * **Knob 1 (A0):** Controls the loop window and loop length slicing (`looperWindowMs`).
